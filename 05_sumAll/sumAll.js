@@ -1,8 +1,9 @@
 const sumAll = function(start,end) {
-    let sum = 0
-    for ( let i = start; i <= end; i++) {
+    let add = 0
+    for (var i = start; i <= end; i ++){
         add += i
     }
+    return add
 };
 
 // Do not edit below this line
