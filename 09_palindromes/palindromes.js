@@ -1,8 +1,7 @@
 const palindromes = function (string) {
-    let newString = string.toLowerCase()
+    let newString = string.toLowerCase().replace(/[^a-z0-9]/g, '');
     let result = '';
     for (let i = newString.length- 1; i >= 0; i--){
-       if (string === ',') continue;
         result += newString[i];
     }
   return result === newString
@@ -10,3 +9,4 @@ const palindromes = function (string) {
 
 // Do not edit below this line
 module.exports = palindromes;
+
