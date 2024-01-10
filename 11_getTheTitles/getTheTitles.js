@@ -5,6 +5,10 @@ const getTheTitles = function(array) {
     }
     return titles
 };
-
+// const getTheTitles2 = function(array) {
+//     return array.map(function(book) {
+//         return book.title;
+//     });
+//  };
 // Do not edit below this line
 module.exports = getTheTitles;
