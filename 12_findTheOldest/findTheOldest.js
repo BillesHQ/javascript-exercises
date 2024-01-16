@@ -6,15 +6,16 @@ const findTheOldest = function(people) {
             // years.push(currentYear - people[i].yearOfBirth);
             people[i].age = (currentYear - people[i].yearOfBirth)
         } else {
-            years[i].age = (people[i].yearOfDeath - people[i].yearOfBirth)
+            // years[i].age = (people[i].yearOfDeath - people[i].yearOfBirth)
+            people[i].age = (people[i].yearOfDeath - people[i].yearOfBirth)
         }
     }
-
+    return Math.max(...people.ages)
 
 
     // let ages = years.sort()
     // let answer = ages.reduce(ages
-    return Math.max(...people.ages)
+    // return Math.max(...people.ages)
     // let person = people.find(p => p.)
 
 
